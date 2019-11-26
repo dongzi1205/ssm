@@ -2,14 +2,14 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>SpringDemo</artifactId>
-        <groupId>com.yqd</groupId>
-        <version>1.0-SNAPSHOT</version>
-    </parent>
+    <!--<parent>-->
+    <artifactId>ssm2019_11_21pm</artifactId>
+    <groupId>com.yqd</groupId>
+    <version>1.0-SNAPSHOT</version>
+    <!--</parent>-->
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ssm2019_11_21pm</artifactId>
+    <!--<artifactId>ssm2019_11_21pm</artifactId>-->
     <packaging>war</packaging>
 
     <name>ssm2019_11_21pm Maven Webapp</name>
@@ -96,14 +96,13 @@
             <version>3.4.3</version>
         </dependency>
 
-         <!--lombok:增强您的Java：自动资源管理，自动生成getter，setter，equals，hashCode和toString等！-->
+        <!--lombok:增强您的Java：自动资源管理，自动生成getter，setter，equals，hashCode和toString等！-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.8</version>
             <scope>provided</scope>
         </dependency>
-
 
 
     </dependencies>
