@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.CartMapper">
+  <resultMap id="BaseResultMap" type="com.pojo.Cart">
+    <!--@mbg.generated generated on Mon Nov 25 18:51:17 CST 2019.-->
+    <id column="cartid" jdbcType="INTEGER" property="cartid" />
+    <result column="bookid" jdbcType="VARCHAR" property="bookid" />
+    <result column="booknum" jdbcType="INTEGER" property="booknum" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Mon Nov 25 18:51:17 CST 2019.-->
+    cartid, bookid, booknum
+  </sql>
+</mapper>
