@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.TenderingfileMapper">
+
+    <!--批量上传附件的方法-->
+    <insert id="insertTenderingfiles" parameterType="list">
+        insert into tenderingfile(filepath,tenderingprjid) values
+        <foreach collection="list" item="t" separator=",">
+            (#{t.filepath},#{t.tenderingprjid})
+        </foreach>
+
+    </insert>
+</mapper>

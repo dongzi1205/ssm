@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.UserMenuMapper">
+    <!--查询权限的菜单-->
+    <select id="selectUserMenuByUserRoot" resultType="com.pojo.UserMenu" parameterType="com.pojo.User">
+        select DISTINCT(um.id),um.`name`,um.is_parent,um.`open`,um.pid,um.target,um.url
+        from user_mid_role ur
+                 inner join role_mid_menu rm on ur.role_id = rm.role_id
+                 inner join menu um on um.id = rm.menu_id
+        where ur.user_id = #{id}
+    </select>
+
+</mapper>
